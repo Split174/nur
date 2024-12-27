@@ -2,6 +2,8 @@
   lib,
   buildGoModule,
   fetchFromGitHub,
+  nftables,
+  wget,
 }:
 buildGoModule rec {
   pname = "kgb";
@@ -14,7 +16,7 @@ buildGoModule rec {
     hash = "sha256-ZGKue8w2cfr4dy2r4/vxZxOQGwzEJLLsmnuuo8EKIRM=";
   };
 
-  buildInputs = [wget nftables];
+  nativeBuildInputs = [wget nftables];
 
   vendorHash = "sha256-/K54cTtAjQOMfP+zZjogwTIGGOgyEgJp8I04TYMDM7M=";
 
