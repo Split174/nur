@@ -3,7 +3,6 @@
   buildGoModule,
   fetchFromGitHub,
 }:
-
 buildGoModule rec {
   pname = "dnsr";
   version = "4.1.1";
@@ -17,7 +16,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-ZfLADPtkGWE7XOk0dOy5yNMXMI9II9TnQ+lMTZx7B/M=";
 
-  ldflags = [ "-s" "-w" ];
+  ldflags = ["-s" "-w"];
 
   meta = {
     description = "DNS-based selective routing for DPI bypass on Linux & routers";

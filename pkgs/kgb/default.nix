@@ -5,24 +5,24 @@
 }:
 buildGoModule rec {
   pname = "kgb";
-  version = "unstable-2024-12-15";
+  version = "unstable-2024-12-27";
 
   src = fetchFromGitHub {
     owner = "Split174";
     repo = "KGB";
-    rev = "d9701cc696cb9c6e645beea951838d312a15ec7a";
-    hash = "sha256-HfQm0YeqsFthqNMs+6u+23uqD3cM/4TgBZSC651D5lM=";
+    rev = "99d14a78befe232e75cf7282b5376aa129e69a18";
+    hash = "sha256-ZGKue8w2cfr4dy2r4/vxZxOQGwzEJLLsmnuuo8EKIRM=";
   };
 
-  vendorHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+  vendorHash = "sha256-/K54cTtAjQOMfP+zZjogwTIGGOgyEgJp8I04TYMDM7M=";
 
   ldflags = ["-s" "-w"];
 
   meta = {
     description = "";
-    homepage = "https://github.com/Split174/KGB/tree/feature/mode-to-nft";
+    homepage = "https://github.com/Split174/KGB/commit/99d14a78befe232e75cf7282b5376aa129e69a18";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; ["Split174"];
+    maintainers = with lib.maintainers; [];
     mainProgram = "kgb";
   };
 }
