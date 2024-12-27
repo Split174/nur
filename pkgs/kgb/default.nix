@@ -14,7 +14,7 @@ buildGoModule rec {
     hash = "sha256-ZGKue8w2cfr4dy2r4/vxZxOQGwzEJLLsmnuuo8EKIRM=";
   };
 
-  nativeBuildInputs = [wget nftables];
+  buildInputs = [wget nftables];
 
   vendorHash = "sha256-/K54cTtAjQOMfP+zZjogwTIGGOgyEgJp8I04TYMDM7M=";
 
