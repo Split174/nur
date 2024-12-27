@@ -24,8 +24,8 @@ buildGoModule rec {
     homepage = "git@github.com:Jipok/dnsr.git";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
-      Jipok
-      Split174
+      "Jipok"
+      "Split174"
     ];
     mainProgram = "dnsr";
   };
