@@ -7,13 +7,13 @@
 }:
 buildGoModule rec {
   pname = "kgb";
-  version = "unstable-2025-01-07";
+  version = "0.0.1";
 
   src = fetchFromGitHub {
     owner = "Split174";
     repo = "KGB";
-    rev = "dd44044cb9c40c018bd864ce3ebe39c1ecb23c90";
-    hash = "sha256-0cB/kxMRiDGVucA+jxdCXVFfjqjCV0WCBnuRe7vb80I=";
+    rev = version;
+    hash = "sha256-7FTFpYd15lJCI3b9hla7vdkZQUvwiXVdi5F4ulmu/OA=";
   };
 
   buildInputs = [wget nftables];
@@ -23,7 +23,7 @@ buildGoModule rec {
   ldflags = ["-s" "-w"];
 
   meta = {
-    description = "";
+    description = "KGB is a Go application that manages IP filtering based on country codes using nftables";
     homepage = "https://github.com/Split174/KGB";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; ["Split174"];
