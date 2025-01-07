@@ -2,18 +2,16 @@
   lib,
   buildGoModule,
   fetchFromGitHub,
-  nftables,
-  wget,
 }:
 buildGoModule rec {
   pname = "kgb";
-  version = "unstable-2024-12-27";
+  version = "unstable-2025-01-07";
 
   src = fetchFromGitHub {
     owner = "Split174";
     repo = "KGB";
-    rev = "99d14a78befe232e75cf7282b5376aa129e69a18";
-    hash = "sha256-ZGKue8w2cfr4dy2r4/vxZxOQGwzEJLLsmnuuo8EKIRM=";
+    rev = "dd44044cb9c40c018bd864ce3ebe39c1ecb23c90";
+    hash = "sha256-0cB/kxMRiDGVucA+jxdCXVFfjqjCV0WCBnuRe7vb80I=";
   };
 
   buildInputs = [wget nftables];
@@ -24,8 +22,8 @@ buildGoModule rec {
 
   meta = {
     description = "";
-    homepage = "https://github.com/Split174/KGB/commit/99d14a78befe232e75cf7282b5376aa129e69a18";
-    license = lib.licenses.mit;
+    homepage = "https://github.com/Split174/KGB";
+    license = lib.licenses.MIT;
     maintainers = with lib.maintainers; [];
     mainProgram = "kgb";
   };
