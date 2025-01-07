@@ -2,6 +2,8 @@
   lib,
   buildGoModule,
   fetchFromGitHub,
+  nftables,
+  wget,
 }:
 buildGoModule rec {
   pname = "kgb";
