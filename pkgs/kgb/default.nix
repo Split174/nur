@@ -23,8 +23,8 @@ buildGoModule rec {
   meta = {
     description = "";
     homepage = "https://github.com/Split174/KGB";
-    license = lib.licenses.MIT;
-    maintainers = with lib.maintainers; [];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; ["Split174"];
     mainProgram = "kgb";
   };
 }
