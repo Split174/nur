@@ -14,7 +14,8 @@
   example-package = pkgs.callPackage ./pkgs/example-package {};
   dnsr = pkgs.callPackage ./pkgs/dnsr {};
   kgb = pkgs.callPackage ./pkgs/kgb {};
-  jauth = pkgs.callPackage ./pkgs/kgb {};
+  jauth = pkgs.callPackage ./pkgs/jauth {};
+  vkv = pkgs.callPackage ./pkgs/vkv {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
