@@ -23,11 +23,15 @@ buildGoModule rec {
     "-X=main.version=${version}"
   ];
 
+  postPatch = ''
+     substituteInPlace go.mod --replace "go 1.23.4" "go 1.23.3"
+   '';
+
   meta = {
     description = "Vkv enables you to list, compare, move, import, document, backup & encrypt secrets from a HashiCorp Vault KV engine";
     homepage = "https://github.com/FalcoSuessgott/vkv";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ ];
+    maintainers = with lib.maintainers; [ "Split174" ];
     mainProgram = "vkv";
   };
 }
