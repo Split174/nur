@@ -17,6 +17,7 @@
   jauth = pkgs.callPackage ./pkgs/jauth {};
   migration-assist = pkgs.callPackage ./pkgs/migration-assist {};
   #vkv = pkgs.callPackage ./pkgs/vkv {};
+  unregistry = pkgs.callPackage ./pkgs/unregistry {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
