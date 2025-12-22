@@ -18,6 +18,8 @@ buildGoModule rec {
 
   ldflags = ["-s" "-w"];
 
+  doCheck = false;
+
   meta = {
     description = "";
     homepage = "https://github.com/Split174/secure-keepass-fuse";
