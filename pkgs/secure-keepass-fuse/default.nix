@@ -10,7 +10,7 @@ buildGoModule rec {
   src = fetchFromGitHub {
     owner = "Split174";
     repo = "secure-keepass-fuse";
-    rev = "v${version}";
+    rev = "${version}";
     hash = "sha256-qEioTkuSBa/R5qg3R/0STO17r+BZDJbkWjS1GYOYIYI=";
   };
 
