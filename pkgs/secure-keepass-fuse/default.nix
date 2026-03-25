@@ -22,7 +22,9 @@ buildGoModule rec {
     description = "Secure-keepass-fuse - mounts kdbx attachments as fuse-filesystem. These attachments can only be read by specific processes specified in the notes for the entry";
     homepage = "https://github.com/Split174/secure-keepass-fuse";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [];
+    maintainers = with lib.maintainers; [
+      "Split174"
+    ];
     mainProgram = "secure-keepass-fuse";
   };
 }
