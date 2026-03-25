@@ -5,7 +5,7 @@
 }:
 buildGoModule rec {
   pname = "secure-keepass-fuse";
-  version = "feature/move-to-interactive-window";
+  version = "v0.0.3";
 
   src = fetchFromGitHub {
     owner = "Split174";
