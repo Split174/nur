@@ -5,28 +5,24 @@
 }:
 buildGoModule rec {
   pname = "secure-keepass-fuse";
-  version = "v0.0.3";
+  version = "0.0.3";
 
   src = fetchFromGitHub {
     owner = "Split174";
     repo = "secure-keepass-fuse";
-    rev = "${version}";
-    hash = "sha256-qEioTkuSBa/R5qg3R/0STO17r+BZDJbkWjS1GYOYIYI=";
+    rev = "v${version}";
+    hash = "sha256-NanxPHquGhmMaYPMAnHT4cYzBb3spr4XkkBGtlYDsHE=";
   };
 
-  vendorHash = "sha256-+4Syd4z5SN4pe8lWTXeSN9NVTSFRY+XOns8F2leEGOo=";
+  vendorHash = "sha256-LCV7QN3znl8gu3xFpJE3FG6rnzeTlVs/TvSY1jI0MUQ=";
 
   ldflags = ["-s" "-w"];
 
-  doCheck = false;
-
   meta = {
-    description = "";
+    description = "Secure-keepass-fuse - mounts kdbx attachments as fuse-filesystem. These attachments can only be read by specific processes specified in the notes for the entry";
     homepage = "https://github.com/Split174/secure-keepass-fuse";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [
-      "Split174"
-    ];
+    maintainers = with lib.maintainers; [];
     mainProgram = "secure-keepass-fuse";
   };
 }
