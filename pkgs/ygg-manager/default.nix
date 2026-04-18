@@ -5,13 +5,13 @@
 }:
 buildGoModule rec {
   pname = "ygg-manager";
-  version = "unstable-2026-04-18";
+  version = "1.0.0";
 
   src = fetchFromGitHub {
     owner = "Split174";
     repo = "ygg-manager";
-    rev = "c137941ed6bde6c59dfceca71092b26180b6fb5a";
-    hash = "sha256-U04P7JyjayuUHGWzzXxg0y8vTrADInZnEq7XM68ASXo=";
+    rev = "v${version}";
+    hash = "sha256-lEVDf3qacH1MR97AHk9ux1FhYEeYxCgptY7BHGLKrYg=";
   };
 
   vendorHash = null;
