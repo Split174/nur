@@ -22,7 +22,7 @@ buildGoModule rec {
     description = "";
     homepage = "https://github.com/Split174/ygg-manager";
     license = lib.licenses.MIT;
-    maintainers = with lib.maintainers; [];
+    maintainers = with lib.maintainers; ["Split174"];
     mainProgram = "ygg-manager";
   };
 }
