@@ -11,7 +11,7 @@ buildGoModule rec {
     owner = "Split174";
     repo = "ygg-manager";
     rev = "v${version}";
-    hash = "sha256-lEVDf3qacH1MR97AHk9ux1FhYEeYxCgptY7BHGLKrYg=";
+    hash = "sha256-8YxYgvKRznIgvBDbKmoEj0phhiCNQrU7l88fDq9vCso=";
   };
 
   vendorHash = null;
