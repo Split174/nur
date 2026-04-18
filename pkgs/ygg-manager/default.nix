@@ -21,7 +21,7 @@ buildGoModule rec {
   meta = {
     description = "";
     homepage = "https://github.com/Split174/ygg-manager";
-    license = lib.licenses.MIT;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; ["Split174"];
     mainProgram = "ygg-manager";
   };
