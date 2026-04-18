@@ -19,6 +19,7 @@
   secure-keepass-fuse = pkgs.callPackage ./pkgs/secure-keepass-fuse {};
   #vkv = pkgs.callPackage ./pkgs/vkv {};
   unregistry = pkgs.callPackage ./pkgs/unregistry {};
+  ygg-manager = pkgs.callPackage ./pkgs/ygg-manager {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
