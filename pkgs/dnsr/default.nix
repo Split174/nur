@@ -3,24 +3,25 @@
   buildGoModule,
   fetchFromGitHub,
 }:
+
 buildGoModule rec {
   pname = "dnsr";
-  version = "4.1.1";
+  version = "5.0.2";
 
   src = fetchFromGitHub {
     owner = "Jipok";
     repo = "dnsr";
     rev = version;
-    hash = "sha256-/2FJ28RZrox7Txc4NhJa8+vnPXSN76js/JoD8rLu8sQ=";
+    hash = "sha256-f7X/pDoS/y1xw7q+U0lqJqOqprkmM/z7FMb7iIf+9wU=";
   };
 
-  vendorHash = "sha256-ZfLADPtkGWE7XOk0dOy5yNMXMI9II9TnQ+lMTZx7B/M=";
+  vendorHash = "sha256-N/8pADiBRZmERWuCGNRIaDHNRr2GZYqyiv7HtQGmW70=";
 
-  ldflags = ["-s" "-w"];
+  ldflags = [ "-s" "-w" ];
 
   meta = {
     description = "DNS-based selective routing for DPI bypass on Linux & routers";
-    homepage = "git@github.com:Jipok/dnsr.git";
+    homepage = "https://github.com/Jipok/dnsr";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
       "Jipok"
